@@ -1,0 +1,21 @@
+{
+    "name": "objui/phpmail",
+    "description": "This is a tool for sending email to PHP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "objui",
+            "email": "objui@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0",
+        "phpmailer/phpmailer": "dev-master"
+    },
+    "autoload": {
+        "psr-4":{
+             "objui\\phpmail\\": "src/"
+         }
+    }
+}
