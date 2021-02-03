@@ -56,6 +56,8 @@ class Email
         $mail->AddAddress($data['to_email']);           //接收邮箱
         $mail->Subject = $data['subject'];              //主题
         $mail->MsgHTML($data['content']);               //发送内容
+        $mail->Port = $this->config['port']; 
+        $mail->SMTPSecure = $this->config['secure'];
         return($mail->Send());
     }
 }
